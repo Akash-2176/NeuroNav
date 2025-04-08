@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
+    android:background="#0D0D2B"
     android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnListen"
+    <!-- Glowing Title -->
+    <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Activate NeuroNav 🔊" />
-</LinearLayout>
+        android:text="NeuroNav"
+        android:textSize="80sp"
+        android:textStyle="bold"
+        android:textColor="#00BFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:shadowColor="#0080FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Smart Navigation for Everyone"
+        android:textSize="18sp"
+        android:textColor="#AABBDD"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <!-- Giant Circular Button -->
+    <Button
+        android:id="@+id/btnListen"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_button"
+        android:text="Activate NeuroNav🔊"
+        android:textSize="48sp"
+        android:textColor="#FFFFFF"
+        android:elevation="20dp" />
+
+    <!-- Footer -->
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed by Abirami"
+        android:textSize="14sp"
+        android:textColor="#8899CC"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+</RelativeLayout>
